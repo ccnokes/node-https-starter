@@ -1,0 +1,17 @@
+{
+  "name": "node-https-starter",
+  "version": "1.0.0",
+  "description": "A starter repo for setting up a local HTTPS server in node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "create-certs": "cd certs && ./create-certs.sh",
+    "clear-certs": "find ./certs -name \"*.pem\" -delete -o -name \"*.srl\" -delete"
+  },
+  "keywords": [],
+  "author": "Cameron Nokes",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
