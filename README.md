@@ -3,7 +3,7 @@
 Sometimes you need a local HTTPS server for things. But it's a major hassle setting one up. Now it isn't. 
 
 Usage:
-```
+```shell
 # Set things up
 git clone
 npm install 
