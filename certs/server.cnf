@@ -15,8 +15,8 @@ OU                     = NodeJS Self Signed Cert
 CN                     = localhost
 emailAddress           = certs@example.com
 
-[ san ]
-subjectAltName         = DNS:dev.mycompany.com
+[ SAN ]
+subjectAltName         = DNS:localhost
 
 [ req_attributes ]
 challengePassword      = password
