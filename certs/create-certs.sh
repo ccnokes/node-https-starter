@@ -8,4 +8,4 @@ openssl genrsa -out server-key.pem 4096
 openssl req -new -config server.cnf -key server-key.pem -out server-csr.pem
 
 # sign the request
-openssl x509 -req -extfile server.cnf -days 999 -passin "pass:password" -in server-csr.pem -CA ca-crt.pem -CA key ca-key.pem -CA createserial -out server-crt.pem
+openssl x509 -req -extfile server.cnf -days 999 -passin "pass:password" -in server-csr.pem -CA ca-crt.pem -CAkey ca-key.pem -CAcreateserial -out server-crt.pem
